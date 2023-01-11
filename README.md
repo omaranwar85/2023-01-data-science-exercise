@@ -2,12 +2,12 @@
 
 ## General instructions
 
-1. Clone this repository into your own GitHub account.
+1. Clone/fork this repository into your own GitHub account.
 1. All your work will be done in your repository.
 1. Inspect the data and understand what is available.
 1. When going through the exercise, create git commits and pushes, making a history of changes that can be inspected later.
 1. The exercise should be completed in Python 3.9+.
-1. Your cloned git repository should be structured and populated using a standard Python project template for application development, which other people might reuse.
+1. Your git repository should be structured and populated using a standard Python project template for application development, which other people might reuse.
 1. Create a __README__ file in the root of your repository, explaining how to run your code.
 1. At the end of the exercise, you will __have__ to push your code to your GitHub repository and allow access to the following Git-Ids: [KevinVinsen](https://github.com/KevinVinsen) and [awicenec](https://github.com/awicenec). 
 
