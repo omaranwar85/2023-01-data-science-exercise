@@ -2,7 +2,7 @@
 
 ## General instructions
 
-1. Clone/fork this repository into your own GitHub account.
+1. Fork this repository into your own GitHub account (if you use clone your name will be visible in the original repo).
 1. All your work will be done in your repository.
 1. Inspect the data and understand what is available.
 1. When going through the exercise, create git commits and pushes, making a history of changes that can be inspected later.
