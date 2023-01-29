@@ -50,7 +50,7 @@ visulize_data(months = [6],filter_size=21)
 
 The use of bigger filter generates smoother surfaces for visualisations but also filters the high frequency features from the data. Here is an example of hspec features for the 6th month when plotted as a surface. Surface on the left uses the raw data whereas the surface on the right used the filtered data with filter size of 21x21.
 
-Caution: Use of filters is not appropriate with NaNs in the data. 
+Caution: Use of larger afilters is not appropriate with NaNs in the data. 
 
 ![Alt](Figure_10.png)
 
