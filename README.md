@@ -49,7 +49,7 @@ Second figure for each feature generates two interactive surface subplots of all
 visulize_data(months = [6],filter_size=21)
 ```
 
-The use of larger filter generates smoother surfaces for visualisations but also filters the high frequency features from the data. Here is an example of hspec features for the 6th month when plotted as a surface. Surface on the left uses the raw data, whereas the surface on the right uses the filtered data with filter size of 21x21.
+The use of larger filter generates smoother surfaces for visualisations but also filters the high frequency features from the data. Here is an example of hspec features for the 6th month when projected as a 3-D surface. Surface on the left uses the raw data, whereas the surface on the right uses the filtered data with filter size of 21x21.
 
 Caution: Use of larger averaging filters is not appropriate if there are NaNs in the data. 
 
