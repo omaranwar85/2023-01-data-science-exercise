@@ -23,8 +23,8 @@ tests\exercise_functions_test.py
 
 Script file exercise_functions.py has two functions for the users, one for cleaning and the other for visualisation.
 ```
-clean_csv_files(months = [6,7,8,9])
-visulize_data(months = [6], filter_size=5)
+def clean_csv_files(months = [6,7,8,9])
+def visulize_data(months = [6], filter_size=5)
 ```
 Function 'clean_csv_files' uses the csv files in database to generate clean csv file(s) for each month. The new csv files are generated in the root directory. By default, this function will process the files for all 4 months to generate the clean files with data from targeted timestamps. However, user can specify the desired month(s) to be cleaned as a list of month numbers. See the following example which will only generate clean file for the 9th month:
 ```
