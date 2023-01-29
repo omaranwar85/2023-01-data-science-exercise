@@ -13,6 +13,5 @@ sys.path.append(parent_path)
 
 from src.exercise_functions import clean_csv_files,visulize_data #clean_csv_files, visulize_data
 
-
-clean_csv_files()                       #Call to function to generate clean scv files for all 4 months
-visulize_data([6],filter_size=7)       #Visulaise data for 6th month, with a filter of size: 7x7
+clean_csv_files()     #Call to function to generate clean scv files for all 4 months
+visulize_data()       #Visulaise data for (default) 6th month, with a filter of (default) size: 7x7

@@ -109,7 +109,7 @@ def clean_csv_files(months = [6,7,8,9]): # input is a list of month(s) for clean
             obs_time = month_df.iloc[k,0] # read observe_time
             date_time , junk = obs_time.split("+") # get rid of fraction of sec details
             datetime_object = datetime.strptime(date_time, '%Y-%m-%d %H:%M:%S')
-            datetime_object_prev = datetime_object # keep a record of previos observe_time in the csv file
+            
             
             #print(ref_datetime_object,datetime_object)
             # For the following block, print statement summarize what is happening
