@@ -59,21 +59,22 @@ Caution: Use of larger averaging filters is not appropriate if there are NaNs in
 ### Project structure
 ```
 2023-01-data-science-exercise/
-├── README.md
-├── images
-│   ├── Figure_9.png
-│   └── Figure_10.png
+
 ├── data
 │   ├── 2022-06
 │   ├── 2022-07
 │   ├── 2022-08
 │   └── 2022-09
-├── requirements.txt
+├── images
+│   ├── Figure_9.png
+│   └── Figure_10.png
 ├── src
 │   ├── __init__.py
 │   └── exercise_functions.py
-└── tests
-    ├── __init__.py
-    └── exercise_functions_test.py
+├── tests
+│   ├── __init__.py
+│   └── exercise_functions_test.py
+├── README.md
+└── requirements.txt
 ```
 
