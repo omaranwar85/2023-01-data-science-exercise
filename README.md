@@ -2,11 +2,12 @@
 
 ## How to run the scripts
 
-1. First, clone this repository and from the root directory, use the terminal for following command to install the requirements. It is up to the user if they want to create a new environment to run this exercise.
+1. First, clone this repository and then open the terminal in the root directory to the run the following command: 
 ```
 pip install -r requirements.txt
 ```
-In most cases, the required packages should be already available in the base evironment/installation. 
+This will install the requirements for the excercise. It is up to the user if they want to create a new environment to run this exercise.
+
 
 2. Launch 'spyder' and navigate to root directory of this repository.
 
@@ -16,11 +17,11 @@ src\exercise_functions.py
 tests\exercise_functions_test.py
 ```
 
-3. Navigate to 'tests' directory and run exercise_functions_test.py which uses the implemented functions to generate the clean files for all 4 months, and generates the visualisations for 6th month. Following section provides a brief descripting of functions and how the calls in exercise_functions_test.py can be modified for various tasks.
+3. Navigate to 'tests' directory and run exercise_functions_test.py which uses the implemented functions to generate the clean files for all 4 months, and generates the visualisations for the 6th month. Following section provides a brief description of functions and how their input arguments in exercise_functions_test.py can be modified for various tasks.
 
 ## Brief description of functions
 
-Script file exercise_functions.py has two functions for the users, one for cleaning and other for visualisation.
+Script file exercise_functions.py has two functions for the users, one for cleaning and the other for visualisation.
 ```
 clean_csv_files(months = [6,7,8,9])
 visulize_data(months = [6], filter_size=5)
@@ -37,22 +38,22 @@ A total of 14 figures are generated for the visualisation of each month (explain
 
 ## Brief explanation of visualisations
 
-Two visualisation figures are generated for each type of feature i.e. a1, a2, b1, b2, hspec, dspec and sprspec, and for each month. All 100 sub-features (0-99) for each feature are included in these visualisations. 
+Two visualisation figures are generated for each type of feature i.e., a1, a2, b1, b2, hspec, dspec and sprspec, and for each month. All 100 sub-features (0-99) for each feature are included in these visualisations. 
 
 First figure for each feature projects all the sub-features in a 2-D space using a different colour for each sub-feature. This allows to easily identify the days/times where all the sub-features show a similar trend.
 Here is an example of hspec features (hspec_0 to hspec_99) for the 6th month when projected on a 2-D space.
-![Alt](Figure_9.png)
+![Alt](images/Figure_9.png)
 
-Second figure for each feature generates two interactive surface subplots of all the sub-features (0 to 99) for a feature. This allows the user to observe the variation across days as well as across sub-features. The first subplot directly uses the data from csv files without any modifications, whereas the second subplot uses a 2-D averaging filter for smoothing the surface by reducing the high frequency noise. The default dimensions for the filter are 5x5, but the user can specify any desired dimension between 3 and 21. The example below uses a bigger filter of 21x21, for the visualisations of data for 6th month. 
+Second figure for each feature generates two interactive surface subplots of all the sub-features (0 to 99) for a feature. This allows the user to observe the variation across days as well as across sub-features. The first subplot directly uses the data from csv files without any modifications, whereas the second subplot uses a 2-D averaging filter for smoothing the surface by reducing the high frequency noise. The default dimensions for the filter are 5x5, but the user can specify any desired dimension between 3 and 21. The example below uses a larger filter of 21x21 for visualizing the data of 6th month. 
 ```
 visulize_data(months = [6],filter_size=21)
 ```
 
-The use of bigger filter generates smoother surfaces for visualisations but also filters the high frequency features from the data. Here is an example of hspec features for the 6th month when plotted as a surface. Surface on the left uses the raw data whereas the surface on the right used the filtered data with filter size of 21x21.
+The use of larger filter generates smoother surfaces for visualisations but also filters the high frequency features from the data. Here is an example of hspec features for the 6th month when plotted as a surface. Surface on the left uses the raw data, whereas the surface on the right uses the filtered data with filter size of 21x21.
 
-Caution: Use of larger afilters is not appropriate with NaNs in the data. 
+Caution: Use of larger averaging filters is not appropriate if there are NaNs in the data. 
 
-![Alt](Figure_10.png)
+![Alt](images/Figure_10.png)
 
 
 ### Project structure
@@ -75,3 +76,4 @@ Caution: Use of larger afilters is not appropriate with NaNs in the data.
     ├── __init__.py
     └── exercise_functions_test.py
 ```
+
