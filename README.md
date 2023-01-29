@@ -6,7 +6,7 @@
 ```
 pip install -r requirements.txt
 ```
-In most cases, the required packages should be already available in the base installation. 
+In most cases, the required packages should be already available in the base evironment/installation. 
 
 2. Launch 'spyder' and navigate to root directory of this repository.
 
@@ -43,7 +43,7 @@ First figure for each feature projects all the sub-features in a 2-D space using
 Here is an example of hspec features (hspec_0 to hspec_99) for the 6th month when projected on a 2-D space.
 ![Alt](Figure_9.png)
 
-Second figure for each feature generates two interactive surface subplots of entire sub-feature space. This allows the user to observe the variation across days as well as across sub-features. The first subplot directly uses the data from csv files without any modifications, whereas the second subplot uses a 2-D averaging filter for smoothing the surface by reducing the high frequency noise. The default dimensions for the filter are 5x5, but the user can specify any desired dimension between 3 and 21. The example below uses a bigger filter of 11x11, for the visualisations of data for 6th month. 
+Second figure for each feature generates two interactive surface subplots of all the sub-features (0 to 99) for a feature. This allows the user to observe the variation across days as well as across sub-features. The first subplot directly uses the data from csv files without any modifications, whereas the second subplot uses a 2-D averaging filter for smoothing the surface by reducing the high frequency noise. The default dimensions for the filter are 5x5, but the user can specify any desired dimension between 3 and 21. The example below uses a bigger filter of 21x21, for the visualisations of data for 6th month. 
 ```
 visulize_data(months = [6],filter_size=21)
 ```
@@ -75,6 +75,3 @@ Caution: Use of larger afilters is not appropriate with NaNs in the data.
     ├── __init__.py
     └── exercise_functions_test.py
 ```
-
-
-
