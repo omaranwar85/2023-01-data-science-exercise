@@ -10,9 +10,8 @@ echo "Installing Requirements"
 cd /software/projects/pawsey0411/oanwar
 
 source TestEnv/bin/activate
-pip install --upgrade pip
 
-cd /CreateEnv.sh
+cd /2023-01-data-science-exercise
 pip install -r requirements.txt
 
 echo "Done installing the requirements"
