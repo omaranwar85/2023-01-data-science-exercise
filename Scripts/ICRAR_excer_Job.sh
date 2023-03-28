@@ -6,6 +6,5 @@
 #SBATCH --time=00:02:00
 
 echo "Starting program"
-
 cd /software/projects/pawsey0411/oanwar/2023-01-data-science-exercise/tests
 python3 exercise_functions_test.py
