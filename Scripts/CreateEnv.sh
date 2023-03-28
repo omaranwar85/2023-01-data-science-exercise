@@ -10,6 +10,7 @@ python3 -m ICRAR_excer_Job /software/projects/pawsey0411/oanwar/
 
 cd /software/projects/pawsey0411/oanwar/2023-01-data-science-exercise
 
+source ICRAR_excer_Job/bin/activate
 pip install -r requirements.txt
 
 echo "Done creating 'ICRAR_excer_Job' ENV"
