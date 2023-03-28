@@ -3,7 +3,7 @@
 #SBATCH --partition=work
 #SBATCH --ntasks=1
 #SBATCH --cpus-per-task=1
-#SBATCH --time=00:00:02
+#SBATCH --time=00:01:00
 
 echo "Creating ENV"
 
