@@ -3,7 +3,7 @@
 #SBATCH --account=pawsey0411
 #SBATCH --ntasks=1
 #SBATCH --ntasks-per-node=1
-#SBATCH --time=00:01:00
+#SBATCH --time=00:03:00
 
 echo "Installing Requirements"
 
