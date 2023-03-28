@@ -1,8 +1,8 @@
 #!/bin/bash -l
 #SBATCH --job-name=CreateEnv
-#SBATCH --partition=work
+#SBATCH --account=pawsey0411
 #SBATCH --ntasks=1
-#SBATCH --cpus-per-task=1
+#SBATCH --ntasks-per-node=1
 #SBATCH --time=00:01:00
 
 echo "Creating ENV"
