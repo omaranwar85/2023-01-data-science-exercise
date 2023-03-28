@@ -11,7 +11,7 @@ cd /software/projects/pawsey0411/oanwar
 
 source TestEnv/bin/activate
 
-cd /2023-01-data-science-exercise
+cd /software/projects/pawsey0411/oanwar/2023-01-data-science-exercise
 pip install -r requirements.txt
 
 echo "Done installing the requirements"

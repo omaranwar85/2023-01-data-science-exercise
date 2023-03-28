@@ -15,7 +15,4 @@ cd /software/projects/pawsey0411/oanwar
 source TestEnv/bin/activate
 pip install --upgrade pip
 
-cd /
-pip install -r requirements.txt
-
 echo "Done creating 'TestEnv' ENV"
