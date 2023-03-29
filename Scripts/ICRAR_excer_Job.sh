@@ -19,6 +19,7 @@ echo "Loading Modules"
 module load py-numpy/1.20.3
 module load py-pandas/1.3.4
 module load py-scipy/1.7.1
+module load py-matplotlib/3.4.3
 
 echo "Modules loaded"
 
