@@ -64,7 +64,7 @@ def clean_csv_files(months = [6,7,8,9]): # input is a list of month(s) for clean
               
             try:
                 drop_rows = [] # List of Indexes of rows with NaN or invalid data to be dropped
-                df = pd.read_csv(file_name,index_col=False, converters={'dspec_28': convert_to_NaN_if_not_float}, on_bad_lines={lambda x: x[:-1]}, engine='python')
+                df = pd.read_csv(file_name,index_col=False, converters={'dspec_28': convert_to_NaN_if_not_float}, on_bad_lines='skip')#, engine='python')
                 # 'on_bad_lines=lambda x: x[:-1]' trims the rows with more columns than the header. This is based on assumption that invalid data is at the end of row
                 for k in range(df.shape[0]): # loop through all the 'observe_time' values to check for proper date/time, and a1_0 for any NaN rows
                     obs_time_integrity_check = df.iloc[k,0]
