@@ -3,7 +3,7 @@
 #SBATCH --partition=work
 #SBATCH --ntasks=1
 #SBATCH --cpus-per-task=1
-#SBATCH --time=00:02:00
+#SBATCH --time=00:05:00
 
 #echo "Creating ENV"
 #
@@ -17,7 +17,7 @@
 source /software/projects/pawsey0411/oanwar/TestEnv/bin/activate
 echo "Environment activated"
 pip3 install --upgrade pip
-pip install -r /software/projects/pawsey0411/oanwar/2023-01-data-science-exercise/requirements.txt
+pip3 install -r /software/projects/pawsey0411/oanwar/2023-01-data-science-exercise/requirements.txt
 module avail numpy
 echo "Loading Modules"
 module load py-numpy/1.20.3
