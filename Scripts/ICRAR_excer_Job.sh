@@ -27,7 +27,7 @@ cd $MYSCRATCH
 
 export PYTHONPATH="/software/projects/pawsey0411/oanwar/2023-01-data-science-exercise/src":$PYTHONPATH
 export PYTHONPATH="/software/projects/pawsey0411/oanwar/2023-01-data-science-exercise/data":$PYTHONPATH
-echo $PYTHONPATH
+##echo $PYTHONPATH
 
 ####cd /software/projects/pawsey0411/oanwar/2023-01-data-science-exercise/src
 python3 /software/projects/pawsey0411/oanwar/2023-01-data-science-exercise/tests/exercise_functions_test.py

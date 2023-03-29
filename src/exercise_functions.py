@@ -47,7 +47,7 @@ def clean_csv_files(months = [6,7,8,9]): # input is a list of month(s) for clean
         
         #Path for source csv files in database
         ##parent_path = os.path.abspath(os.path.join(os.getcwd(), os.pardir))
-        CSV_month_path = os.path.join("software","projects","pawsey0411","oanwar","2023-01-data-science-exercise" , "data",,year+"-"+month)
+        CSV_month_path = os.path.join("software","projects","pawsey0411","oanwar","2023-01-data-science-exercise" , "data",year+"-"+month)
         if(os.path.isdir(CSV_month_path) == False):
             print("Following directory does not exist: ",CSV_month_path)
             continue
