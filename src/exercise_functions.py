@@ -56,7 +56,7 @@ def clean_csv_files(months = [6,7,8,9]): # input is a list of month(s) for clean
         print("Generating clean CSV for month:", month)
         
         
-        new_CSV_path = os.path.join(year+"-"+month+".csv") # Path for destination csv file
+        new_CSV_path = os.path.join("/software","projects","pawsey0411","oanwar","2023-01-data-science-exercise" ,year+"-"+month+".csv") # Path for destination csv file
         
         dataframe_collection = []
         
