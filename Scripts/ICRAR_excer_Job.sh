@@ -35,6 +35,6 @@ export PYTHONPATH="/software/projects/pawsey0411/oanwar/2023-01-data-science-exe
 ##echo $PYTHONPATH
 
 ####cd /software/projects/pawsey0411/oanwar/2023-01-data-science-exercise/src
-python3 /software/projects/pawsey0411/oanwar/2023-01-data-science-exercise/tests/exercise_functions_test.py
+/software/projects/pawsey0411/oanwar/TestEnv/bin/python3 /software/projects/pawsey0411/oanwar/2023-01-data-science-exercise/tests/exercise_functions_test.py
 
 deactivate
