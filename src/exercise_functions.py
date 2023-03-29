@@ -141,6 +141,7 @@ def clean_csv_files(months = [6,7,8,9]): # input is a list of month(s) for clean
                     while(ref_datetime_object < (datetime_object- timedelta(minutes=10))):
                         print(ref_datetime_object, "-> NaN as required data not available")
                         ref_datetime_string = ref_datetime_object.strftime("%Y-%m-%d %H:%M:%S")
+                        NaNDataFrame['observe_time'] = NaNDataFrame.observe_time.astype(str)
                         NaNDataFrame.at[0,'observe_time']= ref_datetime_string+"+00:00"
                         month_df = pd.concat([month_df,NaNDataFrame])#.reset_index(drop=True)
                         time_stamps_counter+=1
@@ -152,6 +153,7 @@ def clean_csv_files(months = [6,7,8,9]): # input is a list of month(s) for clean
         while(ref_datetime_object < final_stamp_object):
             print(ref_datetime_object, "-> NaN as required data not available")
             ref_datetime_string = ref_datetime_object.strftime("%Y-%m-%d %H:%M:%S")
+            NaNDataFrame['observe_time'] = NaNDataFrame.observe_time.astype(str)
             NaNDataFrame.at[0,'observe_time']= ref_datetime_string+"+00:00"
             month_df = pd.concat([month_df,NaNDataFrame])#.reset_index(drop=True)
             time_stamps_counter+=1
