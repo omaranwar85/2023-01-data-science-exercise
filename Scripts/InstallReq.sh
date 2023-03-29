@@ -7,11 +7,8 @@
 
 echo "Installing Requirements"
 
-cd /software/projects/pawsey0411/oanwar
+source /software/projects/pawsey0411/oanwar/TestEnv/bin/activate
 
-source TestEnv/bin/activate
-
-cd /software/projects/pawsey0411/oanwar/2023-01-data-science-exercise
-pip install -r requirements.txt
+pip install -r /software/projects/pawsey0411/oanwar/2023-01-data-science-exercise/requirements.txt
 
 echo "Done installing the requirements"
