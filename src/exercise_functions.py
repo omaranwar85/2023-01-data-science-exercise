@@ -104,6 +104,7 @@ def clean_csv_files(months = [6,7,8,9]): # input is a list of month(s) for clean
                 
                 NaNDataFrame = pd.DataFrame(np.zeros([1, 702])*np.nan) # a row of NaNs
                 NaNDataFrame.columns = month_df.columns # same column names as the month_df
+                NaNDataFrame['keep'] = NaNDataFrame.keep.astype(str)
                 NaNDataFrame.at[0,'keep']= 'yes' # 'keep' for NaNs set to yes
                 
             obs_time = month_df.iloc[k,0] # read observe_time
