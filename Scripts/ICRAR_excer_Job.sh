@@ -16,7 +16,7 @@ module load python_dateutil/2.8.2
 module load scipy/1.9.1
 echo "Modules loaded"
 
-echo "Generating figures"
+echo "Generating clean files"
 cd $MYSCRATCH
-export PYTHONPATH:/software/projects/pawsey0411/oanwar/2023-01-data-science-exercise/src
+add PYTHONPATH:/software/projects/pawsey0411/oanwar/2023-01-data-science-exercise/src
 python3 /software/projects/pawsey0411/oanwar/2023-01-data-science-exercise/tests/exercise_functions_test.py
