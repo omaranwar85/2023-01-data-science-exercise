@@ -5,12 +5,12 @@
 #SBATCH --cpus-per-task=1
 #SBATCH --time=00:02:00
 
-echo "Creating ENV"
-
-module load python/3.9.15
-python3 -m venv /software/projects/pawsey0411/oanwar/TestEnv
-
-echo "Done creating 'TestEnv' ENV"
+#echo "Creating ENV"
+#
+#module load python/3.9.15
+#python3 -m venv /software/projects/pawsey0411/oanwar/TestEnv
+#
+#echo "Done creating 'TestEnv' ENV"
 
 
 
