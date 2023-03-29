@@ -10,8 +10,6 @@ echo "Creating ENV"
 module load python/3.9.15
 python3 -m venv /software/projects/pawsey0411/oanwar/TestEnv
 
-pip install --upgrade pip
-
 echo "Done creating 'TestEnv' ENV"
 
 source /software/projects/pawsey0411/oanwar/TestEnv/bin/activate
@@ -28,6 +26,9 @@ echo "Generating clean files"
 cd $MYSCRATCH
 
 export PYTHONPATH="software/projects/pawsey0411/oanwar/2023-01-data-science-exercise/src"
+echo PYTHONPATH
+
+cd /software/projects/pawsey0411/oanwar/2023-01-data-science-exercise/src
 python3 /software/projects/pawsey0411/oanwar/2023-01-data-science-exercise/tests/exercise_functions_test.py
 
 deactivate
